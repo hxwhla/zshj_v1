@@ -20,8 +20,8 @@
     "firstNight": 13,
     "otherNight": 9,
     "reminders": ["死亡", "死亡", "视为存活"],
-    "firstNightReminder": "Wake and tell them all evil players.",
-    "otherNightReminder": "Wake to make them kill someone or choose not to reveal deaths."
+    "firstNightReminder": "Wake to tell them all evil players.",
+    "otherNightReminder": "Wake to make them kill someone or choose to reveal deaths."
   },
   {
     "id": "sukuna_jjk",
@@ -34,7 +34,7 @@
     "otherNight": 10,
     "reminders": ["死亡", "手指", "手指", "手指", "手指"],
     "setup": true,
-    "firstNightReminder": "Wake and tell them all evil players. Ask them to choose a player as their vessel.",
+    "firstNightReminder": "Wake to tell them all evil players. Ask them to choose a player as their vessel.",
     "otherNightReminder": "Wake to make them kill someone and check finger count."
   },
   {
@@ -48,7 +48,7 @@
     "otherNight": 11,
     "reminders": ["死亡", "中毒", "新恶魔"],
     "setup": true,
-    "firstNightReminder": "Wake and tell them all evil players. Ask them to choose a player to poison.",
+    "firstNightReminder": "Wake to tell them all evil players. Ask them to choose a player to poison.",
     "otherNightReminder": "Wake to make them kill someone."
   },
   {
@@ -67,10 +67,10 @@
     "image": ["https://example.com/hanami.png"],
     "name": "花御",
     "team": "minion",
-    "ability": "每个夜晚，选择一名未选择过的玩家，其当晚不能行动，并且你在下个黎明获得一层咒力充能；每个夜晚限一次，你可以选择消耗咒力充能施放技能，但下个夜晚你无法行动。消耗一层咒力：当晚可额外行动一次。消耗二层咒力：选择一名玩家，他死亡。",
+    "ability": "每个夜晚，选择一名未选择过的玩家，其当晚不能行动，并且你在下个黎明获得一层咒力充能；每个夜晚限一次，你可以选择消耗咒力充能施放技能，但下个夜晚你无法行动。消耗一层咒力：当晚可额外行动一次。消耗三层咒力：选择一名玩家，他死亡。",
     "flavor": "人类...令人作呕。",
     "otherNight": 6,
-    "reminders": ["无法行动", "咒力", "咒力", "额外行动", "死亡"],
+    "reminders": ["无法行动", "咒力1", "咒力2", "咒力3", "咒力4", "额外行动", "死亡"],
     "otherNightReminder": "Wake to choose a player to disable or spend curse power."
   },
   {
@@ -97,6 +97,18 @@
     "otherNightReminder": "Wake to choose a player to poison or disable."
   },
   {
+    "id": "sambaipo_jjk",
+    "image": ["https://example.com/sambaipo.png"],
+    "name": "参拜婆",
+    "team": "minion",
+    "ability": "每个夜晚*，你需要选择除你以外一名与上个夜晚不同的存活玩家并猜测其角色，若正确，当其下个白天死于处决时，其转变为邪恶阵营，最多转换两次；若选择的玩家为伏黑甚尔，你立刻死亡。",
+    "flavor": "通灵之术，改写命运。",
+    "otherNight": 4,
+    "reminders": ["通灵", "转变邪恶", "死亡"],
+    "setup": true,
+    "otherNightReminder": "Wake to choose a player and guess their role."
+  },
+  {
     "id": "inumaki_jjk",
     "image": ["https://example.com/inumaki.png"],
     "name": "狗卷棘",
@@ -113,7 +125,6 @@
     "name": "伏黑甚尔",
     "team": "outsider",
     "ability": "每局限一次，在白天随机击杀场上优势方一名玩家，均势不会造成死亡。你随时可能死亡。",
-    "flavor": "猴子不值得同情。",
     "reminders": ["死亡"],
     "setup": true
   },
@@ -123,8 +134,30 @@
     "name": "夏油杰",
     "team": "outsider",
     "ability": "当连续处决三名善良方时，你变为独立阵营，当存活人数小于等于三时，你独自获胜。",
-    "flavor": "为了更强。",
+    "flavor": "猴子不值得同情。",
     "reminders": ["独立获胜"]
+  },
+  {
+    "id": "shaoxiang_jjk",
+    "image": ["https://example.com/shaoxiang.png"],
+    "name": "烧相 - 九相图老幺",
+    "team": "outsider",
+    "ability": "你必为九相图之一。每个夜晚，选择4名玩家，说书人告知其中九相图个数；当连续两个夜晚选中两次4个九相图，且玩家不重叠的组合时，你独自获胜。",
+    "flavor": "九相图，集齐之时。",
+    "otherNight": 13,
+    "reminders": ["九相图", "独自获胜", "九相图", "九相图", "九相图", "九相图", "九相图", "九相图", "九相图"],
+    "setup": true,
+    "otherNightReminder": "Wake to choose four players and be informed how many are Nine Phase Diagram members."
+  },
+  {
+    "id": "zeninzhizai_jjk",
+    "image": ["https://example.com/zeninzhizai.png"],
+    "name": "禅院直哉",
+    "team": "outsider",
+    "ability": "你以为你是一个不在场的镇民，当你疯狂证明自己是这个角色时，你可能死亡。",
+    "flavor": "B王的尊严不容冒犯。",
+    "reminders": ["B王", "死亡"],
+    "setup": true
   },
   {
     "id": "yuta_jjk",
@@ -146,6 +179,17 @@
     "otherNight": 15,
     "reminders": ["黑闪", "黑闪", "中毒"],
     "otherNightReminder": "Wake to choose a player to use Black Flash on."
+  },
+  {
+    "id": "qihaijianren_jjk",
+    "image": ["https://example.com/qihaijianren.png"],
+    "name": "七海建人",
+    "team": "townsfolk",
+    "ability": "每个夜晚*，选择一名玩家，你得到其技能的两个词条，其中有一条为正确。重复选择不会更新词条，除非你中毒。",
+    "flavor": "专业的工作需要专业的咒术师。",
+    "otherNight": 10,
+    "reminders": ["十划咒法", "词条"],
+    "otherNightReminder": "Wake to choose a player and receive two phrases describing their ability, one of which is true."
   },
   {
     "id": "gojo_jjk",
@@ -174,7 +218,7 @@
     "image": ["https://example.com/nue.png"],
     "name": "帐相",
     "team": "townsfolk",
-    "ability": "首个夜晚，你得知另外2名九相图玩家；当白天他们即将被处决时，你可以公开声称代替其死亡。每个夜晚*，其他九相图玩家的死亡延迟到你同意死亡名单之后才会发生，如果你不同意，你代替其死亡。",
+    "ability": "你必为九相图之一。首个夜晚，你得知另外2名九相图玩家；当白天他们即将被处决时，你可以公开声称代替其死亡。每个夜晚*，其他九相图玩家的死亡延迟到你同意死亡名单之后才会发生，如果你不同意，你代替其死亡。",
     "flavor": "九相图，集齐之时。",
     "firstNight": 20,
     "otherNight": 1,
