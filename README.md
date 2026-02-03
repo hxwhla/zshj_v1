@@ -1,0 +1,1 @@
+https://github.com/bra1n/townsquare#custom-characters
